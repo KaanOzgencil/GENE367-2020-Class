@@ -4,9 +4,7 @@ You are given an arbitrary case, in which you are interested in mapping location
 To answer this question, you will need to follow the preparation steps given in the script file provided ("script"). Don't forget to set your working directory. Line of code to do that is not given in the script. The R environment file provided (named "functions") has the functions each group needs to conduct their simulations. The functions simulates (i) the gamete production (via single crossing overs - double crossing overs are ignored) of a heterozygous F1 individual obtained from mating between an AABBCC and aabbcc, (ii) its mating with a recessive parental individual (i.e. the backcross), and it gives the phenotype of the resulting F2 individual's phenotype. Each group has a unique function that simulates different cases (i.e. different gene order, different gene distances and different linkage groups). You will need to run your function (which takes no arguments) 10.000 times and use the results to do the gene mapping. It is really easy to do that in R. 
 
 ```{r}
-# Set your working directory. Just in case you need it for something.
 
-# Create a set of locations along an arbitrary chromosome, length of which is 1.00 units or 100cM.  
 seq(from = 0.01, to = 1.00, by = 0.01) -> freqs
 
 # Simulate the crossing over location.
